@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Главная страница{% endblock %}
+{% block active_home %}active{% endblock %}
+{% block body %}
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Real Estate Model</h1>
+        <p class="lead text-muted">Real Estate Model - это модель прогнозирования стоимости жилой недвижимости РФ.</p>
+            <form action="/predict">
+                <button type="submit" class="btn btn-primary col-sm-5">Узнать цену!</button>
+            </form>
+      </div>
+    </div>
+</section>
+{% endblock %}

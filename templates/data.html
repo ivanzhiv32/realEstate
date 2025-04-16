@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Прогноз{% endblock %}
+{% block active_data %}active{% endblock %}
+{% block body %}
+<section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Используемый набор данных</h1>
+            <p class="lead text-muted">
+                Датасет содержит список объектов жилой недвижимости Российской Федерации с их характеристиками и стоимостью.
+                Данные были собраны в период с 2018 по 2021 годы.
+                Информация о объектах недвижимости взята с популярных российских порталов, занимающихся публикацией объявлений о продаже жилья.<br>
+                Датасет содержит 5.4 миллионов записей об объектах жилой недвижимости,
+                которые распределены по всей территории Российской Федерации.
+            </p>
+
+        </div>
+        <img class="px-5" src="static/mapData.jpg" height="350" >
+      </div>
+  </section>
+{% endblock %}

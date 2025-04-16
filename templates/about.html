@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Hello{% endblock %}
+{% block active_about %}active{% endblock %}
+{% block body %}
+  <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Информация о Real Estate Model</h1>
+          <h4 class="fw-light">Real Estate Model - это модель прогнозирования стоимости жилой недвижимости РФ.</h4>
+            <p  class="lead text-muted">В качестве модели машинного обучения был выбран градиентный бустинг (LightGBM).
+            <br>Градиентный бустинг – это метод машинного обучения для задач регрессии и классификации,
+                который создает прогнозирующую модель в форме ансамбля слабых алгоритмов прогнозирования.
+                В качестве ансамбля для выбранной модели использовались деревья решений.</p>
+        </div>
+      </div>
+  </section>
+{% endblock %}
